@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo" ng-controller="DemoCtrl as demoCtrl">
+<head>
+    <title>Barcode Creation!</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+</head>
+
+<body>
+    <a class="github-fork-ribbon" href="https://github.com/fkkarakurt/barcode-creator" target="_blank" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+
+    <h1>Barcode Creation!</h1>
+
+    <ng-barcode
+        ng-barcode-input="{{demoCtrl.barcodeInput}}"
+        ng-barcode-code="code39">
+    </ng-barcode>
+
+    <div class="text-field">
+        <input type="text" placeholder="Barkodunu oluşturmak istediğiniz değeri girin..." ng-model="demoCtrl.textField">
+        <button ng-click="demoCtrl.updateBarcode()">Go!</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="app/ng-barcode.js"></script>
+    <script src="app/demo.js"></script>
+   
+</body>
+
+
+</html>
