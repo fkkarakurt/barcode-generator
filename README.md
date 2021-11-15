@@ -1,5 +1,5 @@
 
-# Barcode Creator
+# Barcode Generator
 
 This repo is designed to convert any data, number and text into barcode. The barcode you produce is valid everywhere and when you read it with a barcode reader, it shows the data you entered. It is a very practical and fast way to encrypt or organize products.
 
